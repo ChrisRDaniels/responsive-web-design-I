@@ -165,7 +165,7 @@ header img {
     box-sizing: border-box; 
     display: block;
     margin: 0 auto;
-    border: 1px solid red;
+
 }
 
 footer {
@@ -190,7 +190,7 @@ footer {
 	border: 1px solid black;
 	margin: 20px 20px;
 	padding: 20px 20px;
-	width: 50%;
+	width: 100%;
 	background-color: #d2d2d2;
 }
 
@@ -245,7 +245,13 @@ li {
 
 @media only screen and (max-width: 800px) {
 
-    
+    .col {
+        display: flex;
+      justify-content: center;
+        align-content: space-between;
+        width: 50%;
+        padding: 10px 10px;
+    }
 
     .navlinks {
         display: flex;
@@ -314,7 +320,7 @@ li {
 
     .top-content {
         display: flex;
-        align-content: space-between;
+        align-content: space-evenly;
         justify-content: center;
         width: 100%;
         padding: 10px 10px;
@@ -332,7 +338,14 @@ li {
 
 @media only screen and (max-width: 500px) {
 
-    
+    .col {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 100%;
+        padding: 10px 10px;
+    }
 
     .navlinks {
         display: flex;
@@ -389,7 +402,7 @@ li {
         display: none;
     }
     .features {
-        align-content: space-between;
+        align-content: space-evenly;
     }
     .middle-img {
         display: flex;
@@ -401,16 +414,18 @@ li {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        align-content: space-between;
+        align-content: space-evenly;
         width: 100%;
         padding: 10px 10px;
+        margin: 10px 10px;margin
     }
     .bottom-content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         width: auto;
-        padding: 10px;
+        padding: 10px 10px;
+        margin: 10px 10px;
     }
 
 }
