@@ -69,6 +69,12 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! */
 
+.container {
+    width: 60%;
+    
+    
+}
+
 .navlinks {
 	display: flex;
 	justify-content: left;
@@ -165,6 +171,7 @@ header img {
     box-sizing: border-box; 
     display: block;
     margin: 0 auto;
+    
 
 }
 
